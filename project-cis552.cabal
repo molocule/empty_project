@@ -25,7 +25,11 @@ source-repository head
 
 library
   exposed-modules:
+      Graph
       Lib
+      Main
+      Matrix
+      Sat
   other-modules:
       Paths_project_cis552
   hs-source-dirs:
