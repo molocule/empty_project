@@ -14,7 +14,7 @@ newtype Edges = E {e :: [(Int, Int)]}
 newtype Graph = G {rows :: [Vector]} 
 
 newtype Palette = P {c :: [Int]}
-newtype Color = c :: Int
+newtype Color = K :: Int
 newtype Coloring = C {p :: [(Int, Int)]}
 
 
@@ -27,10 +27,10 @@ newtype Coloring = C {p :: [(Int, Int)]}
 -- 5. Find a proper list-coloring of Gconflict(V, Econflict) with L(v) being the color list of vertex v ∈
 
 -- sample \Theta(log n) colors L(v) uniformly at random
-createPalette :: Int -> Palette
+createPalette :: Int -> Gen Palette
 createPalette = undefined
 
-getSample :: Int -> Palette -> Palette
+getSample :: Int -> Palette -> Gen Palette
 getSample lgN colors = undefined
 
 -- run getSample for each vertex
@@ -60,7 +60,7 @@ colorGraph = undefined
 colorVerifier :: Graph -> Coloring -> Bool
 colorVerifier = undefined 
 
--- check if AB = C then the matrixEval agrees at each v
+-- check coloring is correct and sampled colorings is good 
 propertyCorrectColor ::  Graph -> Coloring -> Bool
 propertyCorrectColor graph coloring = 
     property (colorVerifier graph coloring)
