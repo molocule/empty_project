@@ -14,7 +14,6 @@ newtype Edges = E {e :: [(Int, Int)]}
 newtype Graph = G {rows :: [Vector]} 
 
 newtype Palette = P {c :: [Int]}
-newtype Color = K :: Int
 newtype Coloring = C {p :: [(Int, Int)]}
 
 

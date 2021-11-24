@@ -58,7 +58,7 @@ fromList :: [(Var, Bool)] -> Valuation
 fromList = Map.fromList
 
 -- | creates random valuation for given CNF
-randomVal :: CNF -> Valuation
+randomVal :: CNF -> Gen Valuation
 randomVal = undefined
 
 -- | counts number of clauses satisfied by valuation

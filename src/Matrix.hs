@@ -33,7 +33,7 @@ matrixEval = undefined
 -- and determines if A*B = C
 -- the algorithm will choose O(log n) random boolean vectors
 -- and check that matrixEval A (matrixEval B v) = matrixEval C v
-verifier :: Matrix -> Matrix -> Matrix -> Boolean
+verifier :: Matrix -> Matrix -> Matrix -> Gen Boolean
 verifier = undefined 
 
 -- check if AB = C then the matrixEval agrees at each v
